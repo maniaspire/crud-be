@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "rootDir": "./src", // Adjust this path to match your project structure
+    "outDir": "./dist"  // Adjust this path if you want compiled files in a different directory
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
