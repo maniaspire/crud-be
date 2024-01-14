@@ -1,11 +1,21 @@
-export class UserService {
-    constructor() {
-        console.log('user service created')
-    }
+import { UserModel } from "../model";
+import { DBService } from "./coreServices";
+
+export class UserService extends DBService {
+
     listUser() {
-        return [{
-            name: 'mani',
-            age: 21
-        }]
+        return this.find(UserModel);
+    }
+
+    createUser(data: any) {
+        return this.save(UserModel, data);
+    }
+
+    updateUser(id: string, data: any) {
+        return this.findByIdAndUpdate(UserModel, id, data);
+    }
+
+    deleteUser(id: string) {
+        return this.deleteById(UserModel, id);
     }
 }

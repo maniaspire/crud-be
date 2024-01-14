@@ -20,6 +20,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "hapi": "^18.1.0"
+    "hapi": "^18.1.0",
+    "mongoose": "^7.6.3"
   }
 }
